@@ -3,40 +3,80 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hero Section</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Anta&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <title>Hero</title>
-
     <style>
-      /*
-      SPACING SYSTEM (px)
-      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
-      
-      FONT SIZE SYSTEM (px)
-      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
-      */
-
-      /* 
-      MAIN COLOR: #087f5b
-      GREY COLOR: #343a40
-      */
-
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
+      html {
+        font-family: "Rubic", sans-serif;
+        color: #444;
       }
 
-      body {
-        font-family: "Inter", sans-serif;
-        color: #343a40;
-        line-height: 1;
+      nav {
+        font-size: 20px;
+        font-weight: 700;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      h1 {
+        font-size: 52px;
+        margin-bottom: 32px;
+      }
+
+      p {
+        font-size: 20px;
+        line-height: 1.6;
+        margin: 48px;
+      }
+
+      .btn:link,
+      .btn:visited {
+        font-size: 20px;
+        font-weight: 600;
+        background-color: orange;
+        color: #fff;
+        text-decoration: none;
+        display: inline-block;
+        padding: 16px 32px;
+        border-radius: 9px;
       }
     </style>
   </head>
   <body>
-    START HERE
+    <header>
+      <nav>
+        <div>LOGO</div>
+        <div>NAVIGATION</div>
+      </nav>
+      <div>
+        <h1>A healthy meal delivered to your door, every single day</h1>
+        <p>
+          The smart 365-days-per-year food subscription that will make you eat
+          healthy again. Tailord to your needs
+        </p>
+        <a href="#" class="btn">Start eating well</a>
+      </div>
+    </header>
+
+    <section>
+      <div>
+        <h2>Random Heading</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quidem
+          explicabo, nisi enim, necessitatibus aliquam deserunt repellendus
+          dolorem consequatur tempore ut nihil officia neque eligendi nesciunt
+          harum suscipit cumque. Similique! Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Sapiente error libero ab atque suscipit
+          molestiae sint quas, id, officiis quae eligendi nisi ex necessitatibus
+          maiores recusandae. Asperiores aspernatur vel ducimus.
+        </p>
+      </div>
+    </section>
   </body>
 </html>
