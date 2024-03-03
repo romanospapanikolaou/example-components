@@ -17,7 +17,7 @@ document
           const fileContentDiv = document.getElementById("fileContent");
           fileContentDiv.innerHTML = fileContent;
 
-          // Show the "Copy HTML File Content" button
+          // Show the "Copy File Content" button
           const copyButton = document.getElementById("copyButton");
           copyButton.style.display = "block";
 
@@ -41,7 +41,7 @@ document
             // Change button text to indicate successful copy
             copyButton.innerHTML = "Copied!";
             setTimeout(() => {
-              copyButton.innerHTML = "Copy HTML File Content";
+              copyButton.innerHTML = "Copy File Content";
             }, 2000); // Reset button text after 2 seconds
           });
         };
