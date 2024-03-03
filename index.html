@@ -35,7 +35,7 @@
         line-height: 1;
         display: flex;
         justify-content: center;
-        font-size: 18px;
+        font-size: 24px;
       }
 
       table {
@@ -49,6 +49,7 @@
         /* border: 1px solid #343a40; */
         padding: 16px 24px;
         text-align: center;
+        font-weight: bold;
       }
       thead th {
         background-color: #087f5b;
@@ -63,6 +64,19 @@
       tbody tr:nth-child(even) {
         background-color: #f2f2f2;
       }
+      .btn {
+        font-size: 24px;
+        font-weight: bold;
+      }
+      a {
+        text-decoration: none;
+      }
+      a:visited {
+        color: #087f5b;
+      } /* Visited link    */
+      a:hover {
+        color: #064a00;
+      } /* Mouse over link */
     </style>
   </head>
   <body>
@@ -74,24 +88,57 @@
       </thead>
       <tbody>
         <tr>
-          <th><a href="/html/01-accordion.html">Accordion</a></th>
+          <th>
+            <button class="btn">
+              <a href="/html/01-accordion.html">Accordion</a>
+            </button>
+          </th>
         </tr>
         <tr>
-          <th><a href="/html/02-carousel.html">Carousel</a></th>
+          <th>
+            <button class="btn">
+              <a href="/html/02-carousel.html">Carousel</a>
+            </button>
+          </th>
         </tr>
         <tr>
-          <th><a href="/html/03-table.html">Table</a></th>
+          <th>
+            <button class="btn"><a href="/html/03-table.html">Table</a></button>
+          </th>
         </tr>
         <tr>
-          <th><a href="/html/04-pagination.html">Pagination</a></th>
+          <th>
+            <button class="btn">
+              <a href="/html/04-pagination.html">Pagination</a>
+            </button>
+          </th>
         </tr>
         <tr>
-          <th><a href="/html/05-hero.html">Hero</a></th>
+          <th>
+            <button class="btn"><a href="/html/05-hero.html">Hero</a></button>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <button class="btn" id="loadFileButton">Load HTML File</button>
+            <button class="btn" id="copyButton" style="display: none">
+              Copy HTML File Content
+            </button>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <button class="btn" id="loadFileButton">Load CSS File</button>
+            <button class="btn" id="copyButton" style="display: none">
+              Copy CSS File Content
+            </button>
+          </th>
         </tr>
         <tr>
           <th>MORE</th>
         </tr>
       </tbody>
     </table>
+    <script src="/js/script.js"></script>
   </body>
 </html>
