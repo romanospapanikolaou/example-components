@@ -67,6 +67,7 @@
       .btn {
         font-size: 24px;
         font-weight: bold;
+        text-align: center;
       }
       a {
         text-decoration: none;
@@ -77,6 +78,9 @@
       a:hover {
         color: #064a00;
       } /* Mouse over link */
+      #copyButton {
+        text-align: center;
+      }
     </style>
   </head>
   <body>
@@ -120,17 +124,9 @@
         </tr>
         <tr>
           <th>
-            <button class="btn" id="loadFileButton">Load HTML File</button>
+            <button class="btn" id="loadFileButton">Load File</button>
             <button class="btn" id="copyButton" style="display: none">
-              Copy HTML File Content
-            </button>
-          </th>
-        </tr>
-        <tr>
-          <th>
-            <button class="btn" id="loadFileButton">Load CSS File</button>
-            <button class="btn" id="copyButton" style="display: none">
-              Copy CSS File Content
+              Copy File Content
             </button>
           </th>
         </tr>
@@ -139,6 +135,9 @@
         </tr>
       </tbody>
     </table>
+    <div id="fileContent" style="display: none">
+      <!-- File content will be copied buy not discplayed -->
+    </div>
     <script src="/js/script.js"></script>
   </body>
 </html>
