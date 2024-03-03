@@ -17,9 +17,13 @@ document
           const fileContentDiv = document.getElementById("fileContent");
           fileContentDiv.innerHTML = fileContent;
 
-          // Show the "Copy File Content" button
+          // Show the "Copy HTML File Content" button
           const copyButton = document.getElementById("copyButton");
           copyButton.style.display = "block";
+
+          // Hide the "Load HTML File" button
+          const loadFileButton = document.getElementById("loadFileButton");
+          loadFileButton.style.display = "none";
 
           // Add click event listener to the "Copy HTML File Content" button
           copyButton.addEventListener("click", function () {
@@ -41,7 +45,7 @@ document
             // Change button text to indicate successful copy
             copyButton.innerHTML = "Copied!";
             setTimeout(() => {
-              copyButton.innerHTML = "Copy File Content";
+              copyButton.innerHTML = "Copy HTML File Content";
             }, 2000); // Reset button text after 2 seconds
           });
         };
